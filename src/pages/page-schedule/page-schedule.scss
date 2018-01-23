@@ -1,0 +1,44 @@
+.page-schedule.schedule.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .schedule__header.header {
+
+  }
+  .header__title {
+
+  }
+  .header__subtitle {
+    margin-top: 15px;
+  }
+  .schedule__section.section {
+    margin-top: 50px;
+  }
+  .section__heading.heading {
+    display: flex;
+  }
+  .heading__item {
+    width: 20%;
+    padding-bottom: 20px;
+  }
+  .section__body.body {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__footer.footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__btn-download {
+    margin-right: 15px;
+
+  }
+  .footer__btn-book {
+    background-color: $brownish-grey;
+  }
+
+  &.state-2 {
+
+  }
+}
