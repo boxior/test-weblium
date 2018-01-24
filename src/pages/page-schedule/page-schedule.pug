@@ -5,40 +5,40 @@ block content
     -
         var dayM = [
         {
-        day: "Monday",
         time: "6:30 pm - 7:30 pm",
         classG: "Workshop",
         coach: "Lucille Wright",
-
-        level: "Beginners",
-        time1: "7:45 pm - 8:45 pm",
-        classG1: "Seminar",
-        coach1: "Lucille Wright",
-        level1: "Experienced"
+        level: "Beginners"
+        },
+        {
+        time: "7:45 pm - 8:45 pm",
+        classG: "Seminar",
+        coach: "Lucille Wright",
+        level: "Experienced"
         }
         ];
         var dayT = [
         {
-        day: "Tuesday",
         time: "6:30 pm - 7:30 pm",
         classG: "Workshop",
         coach: "Keith Conner",
-        level: "Beginners",
-
-        time1: "7:45 pm - 8:45 pm",
-        classG1: "Q&A",
-        coach1: "Ada Elliott",
-        level1: "All levels",
-
-        time2: "9:00 pm - 10:00 pm",
-        classG2: "Q&A",
-        coach2: "Vernon Carlson",
-        level2: "Experienced"
+        level: "Beginners"
+        },
+        {
+        time: "7:45 pm - 8:45 pm",
+        classG: "Q&A",
+        coach: "Ada Elliott",
+        level: "All levels"
+        },
+        {
+        time: "9:00 pm - 10:00 pm",
+        classG: "Q&A",
+        coach: "Vernon Carlson",
+        level: "Experienced"
         }
         ];
         var dayW = [
         {
-        day: "Wednesday",
         time: "6:30 pm - 7:30 pm",
         classG: "Workshop",
         coach: "Lucille Wright",
@@ -47,59 +47,60 @@ block content
         ];
         var dayTh = [
         {
-        day: "Thursday",
         time: "6:30 pm - 7:30 pm",
         classG: "Workshop",
         coach: "Lucille Wright",
-        level: "Beginners",
-
-        time1: "7:45 pm - 8:45 pm",
-        classG1: "Seminar",
-        coach1: "Lucille Wright",
-        level1: "Experienced"
+        level: "Beginners"
+        },
+        {
+        time: "7:45 pm - 8:45 pm",
+        classG: "Seminar",
+        coach: "Lucille Wright",
+        level: "Experienced"
         }
         ];
         var dayF = [
         {
-        day: "Friday",
         time: "6:30 pm - 7:30 pm",
         classG: "Workshop",
         coach: "Keith Conner",
-        level: "Beginners",
-
-        time1: "7:45 pm - 8:45 pm",
-        classG1: "Q&A",
-        coach1: "Ada Elliott",
-        level1: "All levels",
-
-        time2: "9:00 pm - 10:00 pm",
-        classG2: "Q&A",
-        coach2: "Vernon Carlson",
-        level2: "Experienced"
+        level: "Beginners"
+        },
+        {
+        time: "7:45 pm - 8:45 pm",
+        classG: "Q&A",
+        coach: "Ada Elliott",
+        level: "All levels"
+        },
+        {
+        time: "9:00 pm - 10:00 pm",
+        classG: "Q&A",
+        coach: "Vernon Carlson",
+        level: "Experienced"
         }
         ];
         var dayS = [
         {
-        day: "Saturday",
         time: "6:30 pm - 7:30 pm",
         classG: "Workshop",
         coach: "Keith Conner",
-        level: "Beginners",
-
-        time1: "7:45 pm - 8:45 pm",
-        classG1: "Q&A",
-        coach1: "Ada Elliott",
-        level1: "All levels",
-
-        time2: "9:00 pm - 10:00 pm",
-        classG2: "Q&A",
-        coach2: "Vernon Carlson",
-        level2: "Experienced"
+        level: "Beginners"
+        },
+        {
+        time: "7:45 pm - 8:45 pm",
+        classG: "Q&A",
+        coach: "Ada Elliott",
+        level: "All levels"
+        },
+        {
+        time: "9:00 pm - 10:00 pm",
+        classG: "Q&A",
+        coach: "Vernon Carlson",
+        level: "Experienced"
         }
         ];
         var daySu = [
         {
-        day: "Sunday",
         time: "6:30 pm - 7:30 pm",
         classG: "Seminar",
         coach: "Keith Conner",
@@ -113,26 +114,48 @@ block content
             .header__subtitle.Subtitle Apart from working on effective products for businesses, our specialists organize educational programs for business owners and managers.
         .schedule__section.section
             .section__heading.heading
-                .heading__item.Heading-large.w-h Date
-                .heading__item.Heading-large.w-h Time
-                .heading__item.Heading-large.w-h Class
-                .heading__item.Heading-large.w-h Coach
-                .heading__item.Heading-large.w-h.level Level
+                .heading__item.Heading-large Date
+                .heading__item.Heading-large Time
+                .heading__item.Heading-large Class
+                .heading__item.Heading-large Coach
+                .heading__item.Heading-large.level Level
             .section__body.body
-                each item in dayM
-                    +days(item)
-                each item in dayT
-                    +days(item)
-                each item in dayW
-                    +days(item)
-                each item in dayTh
-                    +days(item)
-                each item in dayF
-                    +days(item)
-                each item in dayS
-                    +days(item)
-                each item in daySu
-                    +days(item)
+                .body__item
+                    .body__day.Heading Monday
+                        .arrow
+                    .body__desc.desc
+                        each item in dayM
+                            +days(item)
+                .body__item
+                    .body__day.Heading Tuesday
+                    .body__desc.desc
+                        each item in dayT
+                            +days(item)
+                .body__item
+                    .body__day.Heading Wednesday
+                    .body__desc.desc
+                        each item in dayW
+                            +days(item)
+                .body__item
+                    .body__day.Heading Thursday
+                    .body__desc.desc
+                        each item in dayTh
+                            +days(item)
+                .body__item
+                    .body__day.Heading Friday
+                    .body__desc.desc
+                        each item in dayF
+                            +days(item)
+                .body__item
+                    .body__day.Heading Saturday
+                    .body__desc.desc
+                        each item in dayS
+                            +days(item)
+                .body__item
+                    .body__day.Heading Sunday
+                    .body__desc.desc
+                        each item in daySu
+                            +days(item)
                 .section__footer.footer
                     button(type="button").footer__btn-download.Medium-button Download a schedule
                     button(type="button").footer__btn-book.Medium-button Book class

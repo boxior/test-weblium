@@ -1,19 +1,46 @@
 .body__item {
   display: flex;
-  padding: 9px 0 20px 0;
+  padding: 9px 0 30px;
   border-top: 1px solid #979797;
+
+  @include media-mobile {
+    flex-direction: column;
+    padding: 9px 24px 30px 0;
+  }
+
   .body__day {
-    //width: $w-20;
+    flex: 1 1 0;
+
+    @include media-mobile {
+      margin-bottom: 15px;
+    }
   }
   .body__desc.desc {
-    //width: $w-80;
+    flex: 4 1 0;
+
+    @include media-mobile {
+      align-self: flex-end;
+    }
   }
   .desc__item {
     display: flex;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    @include media-mobile {
+      padding-bottom: 25px;
+    }
   }
   .desc__times, .desc__class, .desc__coach, .desc__level {
-    //width: $w-25;
+    flex: 1 1 0;
+
+    @include media-mobile {
+      padding: 5px 0;
+    }
   }
   .desc__times {
   }

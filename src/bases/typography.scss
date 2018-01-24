@@ -11,6 +11,7 @@ body {
 
   @include media-tablet {
     font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -56,12 +57,6 @@ img {
   text-align: left;
   color: $black;
 
-  @include media-tablet {
-    font-size: 16px;
-  }
-  @include media-mobile {
-    font-size: 14px;
-  }
   &:first-letter {
     text-transform: capitalize;
   }
@@ -95,13 +90,14 @@ img {
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  line-height: 0.6;
+  line-height: 1;
   letter-spacing: normal;
   text-align: left;
   color: $black-two;
 
   @include media-tablet {
     font-size: 18px;
+    line-height: 1.33;
   }
 }
 .Medium-button {
