@@ -8,6 +8,10 @@ body {
   letter-spacing: normal;
   text-align: left;
   color: $black-two;
+
+  @include media-tablet {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -81,6 +85,10 @@ img {
   letter-spacing: normal;
   text-align: left;
   color: $black;
+
+  @include media-tablet {
+    font-size: 20px;
+  }
 }
 .Heading {
   font-size: 20px;
@@ -91,6 +99,10 @@ img {
   letter-spacing: normal;
   text-align: left;
   color: $black-two;
+
+  @include media-tablet {
+    font-size: 18px;
+  }
 }
 .Medium-button {
   font-size: 14px;

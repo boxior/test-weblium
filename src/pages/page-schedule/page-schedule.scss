@@ -3,6 +3,8 @@
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
+
+
   .schedule__header.header {
 
   }
@@ -19,7 +21,6 @@
     display: flex;
   }
   .heading__item {
-    width: 20%;
     padding-bottom: 20px;
   }
   .section__body.body {
@@ -38,7 +39,47 @@
     background-color: $brownish-grey;
   }
 
+
+
   &.state-2 {
 
+    .level {
+
+      @include media-tablet {
+        display: none;
+      }
+    }
+
+    .w-h {
+      width: $w-20;
+
+      @include media-tablet {
+        width: $w-25;
+      }
+    }
+
+    .w-d {
+      width: $w-20;
+
+      @include media-tablet {
+        width: $w-25;
+      }
+    }
+
+    .w-desc {
+      width: $w-80;
+
+      @include media-tablet {
+        width: $w-75;
+      }
+    }
+
+    .w-d-i {
+      width: $w-25;
+
+      @include media-tablet {
+        width: $w-33;
+      }
+    }
   }
 }
