@@ -108,56 +108,81 @@ block content
         }
         ];
 
-    .page-schedule.schedule.container.state-2
-        .schedule__header.header
-            .header__title.Block-title Schedule
-            .header__subtitle.Subtitle Apart from working on effective products for businesses, our specialists organize educational programs for business owners and managers.
-        .schedule__section.section
+    ul.navigation.container
+        li.navigation__item
+            buton(type="button" data-class="state-0-all").navigation__btn.active-state State 1
+        li.navigation__item
+            buton(type="button" data-class="state-0-all-link").navigation__btn State 2
+        li.navigation__item
+            buton(type="button" data-class="state-1-three").navigation__btn State 3
+        li.navigation__item
+            buton(type="button" data-class="state-2").navigation__btn State 4
+        li.navigation__item
+            buton(type="button" data-class="state-3-without-subt").navigation__btn State 5
+        li.navigation__item
+            buton(type="button" data-class="state-4-one-btn").navigation__btn State 6
+        li.navigation__item
+            buton(type="button" data-class="state-5-without-btn").navigation__btn State 7
+        li.navigation__item
+            buton(type="button" data-class="state-6-without-btn-subt").navigation__btn State 8
+
+    .page-schedule.schedule.container.state-0-all
+        header.schedule__header.header
+            h1.header__title.Block-title Schedule
+            sub.header__subtitle.Subtitle Apart from working on effective products for businesses, our specialists organize educational programs for business owners and managers.
+        section.schedule__section.section
             .section__heading.heading
                 .heading__item.Heading-large Date
                 .heading__item.Heading-large Time
                 .heading__item.Heading-large Class
-                .heading__item.Heading-large Coach
+                .heading__item.Heading-large.coach Coach
                 .heading__item.Heading-large.level Level
-            .section__body.body
+            article.section__body.body
                 .body__item
                     .body__day.Heading Monday
+                        .arrow-down
                     .body__desc.desc
                         each item in dayM
                             +days(item)
                 .body__item
                     .body__day.Heading Tuesday
+                        .arrow-down
                     .body__desc.desc
                         each item in dayT
                             +days(item)
                 .body__item
                     .body__day.Heading Wednesday
+                        .arrow-down
                     .body__desc.desc
                         each item in dayW
                             +days(item)
                 .body__item
                     .body__day.Heading Thursday
+                        .arrow-down
                     .body__desc.desc
                         each item in dayTh
                             +days(item)
                 .body__item
                     .body__day.Heading Friday
+                        .arrow-down
                     .body__desc.desc
                         each item in dayF
                             +days(item)
                 .body__item
                     .body__day.Heading Saturday
+                        .arrow-down
                     .body__desc.desc
                         each item in dayS
                             +days(item)
                 .body__item
                     .body__day.Heading Sunday
+                        .arrow-down
                     .body__desc.desc
                         each item in daySu
                             +days(item)
-                .section__footer.footer
-                    button(type="button").footer__btn-download.Medium-button Download a schedule
-                    button(type="button").footer__btn-book.Medium-button Book class
+                footer.section__footer.footer
+                    button(type="button").footer__btn-download.Medium-button-secondary Download a schedule
+                    button(type="button").footer__btn-book.Medium-button-primary Book a class
 
 
 

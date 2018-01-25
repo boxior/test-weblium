@@ -15,6 +15,10 @@ body {
   }
 }
 
+h1 {
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   transition: $time-anim;
@@ -26,10 +30,6 @@ a {
 }
 
 button, .btn-type {
-  border: 1px solid #959595;
-  padding: 10px 20px;
-  background-color: transparent;
-  border-radius: 5px;
 
   &:hover {
     cursor: pointer;
@@ -61,6 +61,7 @@ img {
     text-transform: capitalize;
   }
 }
+
 .Subtitle {
   font-size: 20px;
   font-weight: normal;
@@ -71,6 +72,7 @@ img {
   text-align: left;
   color: $brownish-grey;
 }
+
 .Heading-large {
   font-size: 24px;
   font-weight: normal;
@@ -85,6 +87,7 @@ img {
     font-size: 20px;
   }
 }
+
 .Heading {
   font-size: 20px;
   font-weight: 500;
@@ -100,7 +103,9 @@ img {
     line-height: 1.33;
   }
 }
-.Medium-button {
+
+.Medium-button-secondary {
+  padding: 15px 20px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -109,4 +114,18 @@ img {
   letter-spacing: normal;
   text-align: center;
   color: $black0;
+  border: 1px solid #959595;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: opacity $time-anim;
+
+  &:hover {
+    opacity: $opacity-rgba;
+  }
+}
+
+.Medium-button-primary {
+  @extend .Medium-button-secondary;
+  color: $color-white;
+  background-color: $brownish-grey;
 }

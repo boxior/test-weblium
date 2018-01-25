@@ -1,4 +1,4 @@
-$twitter-icon-1440: 0px 0px 0px 0px 63px 63px 63px 63px '../images/sprites/sprite.png';
+$down-arrow: 0px 0px 0px 0px 32px 32px 32px 32px '../images/sprites/sprite.png';
 
 @mixin sprite-position($sprite) {
 $sprite-offset-x: nth($sprite, 3);
