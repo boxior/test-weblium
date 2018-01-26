@@ -1,7 +1,7 @@
 function init() {
 
-    let $bodyDay = document.querySelectorAll(".body__day");
-    let $bodyItem = document.querySelector(".body__item");
+    let $bodyDay = document.querySelectorAll(".section__day");
+    let $bodyItem = document.querySelector(".section__item");
     let $navBtn = document.querySelectorAll(".navigation__btn");
     let $pageSchedule = document.querySelector(".page-schedule");
 

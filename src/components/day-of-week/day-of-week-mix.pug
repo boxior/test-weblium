@@ -1,6 +1,6 @@
 mixin days(data)
     .desc__item
-        .desc__times=data.time
-        .desc__class=data.classG
-        .desc__coach.coach=data.coach
-        .desc__level.level=data.level
+        time(aria-label="Time of the program").desc__times=data.time
+        span(aria-label="Class of the program").desc__class=data.classG
+        span(aria-label="Coach of the program").desc__coach.coach=data.coach
+        span(aria-label="Level of the program").desc__level.level=data.level

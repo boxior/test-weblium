@@ -1,4 +1,4 @@
-.body__item {
+.section__item {
   display: flex;
   padding: 9px 0 30px;
   border-top: 1px solid #979797;
@@ -7,7 +7,7 @@
     flex-direction: column;
   }
 
-  .body__day {
+  .section__day {
     flex: 1 1 0;
     position: relative;
 
@@ -39,12 +39,12 @@
         transform: translateY(-50%) rotate(-180deg);
       }
 
-      ~.body__desc.desc {
+      ~.section__desc.desc {
         display: block;
       }
     }
   }
-  .body__desc.desc {
+  .section__desc.desc {
     flex: 4 1 0;
 
     @include media-mobile {

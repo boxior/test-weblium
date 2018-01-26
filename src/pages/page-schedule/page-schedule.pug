@@ -108,81 +108,82 @@ block content
         }
         ];
 
-    ul.navigation.container
-        li.navigation__item
-            buton(type="button" data-class="state-0-all").navigation__btn.active-state State 1
-        li.navigation__item
-            buton(type="button" data-class="state-0-all-link").navigation__btn State 2
-        li.navigation__item
-            buton(type="button" data-class="state-1-three").navigation__btn State 3
-        li.navigation__item
-            buton(type="button" data-class="state-2").navigation__btn State 4
-        li.navigation__item
-            buton(type="button" data-class="state-3-without-subt").navigation__btn State 5
-        li.navigation__item
-            buton(type="button" data-class="state-4-one-btn").navigation__btn State 6
-        li.navigation__item
-            buton(type="button" data-class="state-5-without-btn").navigation__btn State 7
-        li.navigation__item
-            buton(type="button" data-class="state-6-without-btn-subt").navigation__btn State 8
+    menu(type="list").navigation.container
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-0-all" role="tab" aria-label="State of page 1").navigation__btn.active-state State 1
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-0-all-link" role="tab" aria-label="State of page 2").navigation__btn State 2
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-1-three" role="tab" aria-label="State of page 3").navigation__btn State 3
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-2" role="tab" aria-label="State of page 4").navigation__btn State 4
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-3-without-subt" role="tab" aria-label="State of page 5").navigation__btn State 5
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-4-one-btn" role="tab" aria-label="State of page 6").navigation__btn State 6
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-5-without-btn" role="tab" aria-label="State of page 7").navigation__btn State 7
+        li(role="menuitem").navigation__item
+            button(type="button" data-class="state-6-without-btn-subt" role="tab" aria-label="State of page 8").navigation__btn State 8
 
     .page-schedule.schedule.container.state-0-all
-        header.schedule__header.header
-            h1.header__title.Block-title Schedule
-            sub.header__subtitle.Subtitle Apart from working on effective products for businesses, our specialists organize educational programs for business owners and managers.
-        section.schedule__section.section
-            .section__heading.heading
-                .heading__item.Heading-large Date
-                .heading__item.Heading-large Time
-                .heading__item.Heading-large Class
-                .heading__item.Heading-large.coach Coach
-                .heading__item.Heading-large.level Level
-            article.section__body.body
-                .body__item
-                    .body__day.Heading Monday
-                        .arrow-down
-                    .body__desc.desc
+        header(role="presentation").schedule__header.header
+            h1(role="presentation").header__title.Block-title Schedule
+            h3(role="presentation").header__subtitle.Subtitle Apart from working on effective products for businesses, our specialists organize educational programs for business owners and managers.
+        main.schedule__main.main
+            header(role="presentation").main__header
+                ul(role="directory").main__heading.heading
+                    li(role="presentation" aria-label="Day of educational program").heading__item.Heading-large Date
+                    li(role="presentation" aria-label="Time of educational program").heading__item.Heading-large Time
+                    li(role="presentation" aria-label="Class of educational program").heading__item.Heading-large Class
+                    li(role="presentation" aria-label="Coach of educational program").heading__item.Heading-large.coach Coach
+                    li(role="presentation" aria-label="Level of educational program").heading__item.Heading-large.level Level
+            section(role="main").main__section.section
+                article(role="main").section__item
+                    h2(role="presentation" aria-label="Monday").section__day.Heading Monday
+                        i.arrow-down
+                    .section__desc.desc(role="contentinfo")
                         each item in dayM
                             +days(item)
-                .body__item
-                    .body__day.Heading Tuesday
-                        .arrow-down
-                    .body__desc.desc
+                article(role="main").section__item
+                    h2(role="presentation" aria-label="Tuesday").section__day.Heading Tuesday
+                        i.arrow-down
+                    .section__desc.desc(role="contentinfo")
                         each item in dayT
                             +days(item)
-                .body__item
-                    .body__day.Heading Wednesday
-                        .arrow-down
-                    .body__desc.desc
+                article(role="main").section__item
+                    h2(role="presentation" aria-label="Wednesday").section__day.Heading Wednesday
+                        i.arrow-down
+                    .section__desc.desc(role="contentinfo")
                         each item in dayW
                             +days(item)
-                .body__item
-                    .body__day.Heading Thursday
-                        .arrow-down
-                    .body__desc.desc
+                article(role="main").section__item
+                    h2(role="presentation" aria-label="Thursday").section__day.Heading Thursday
+                        i.arrow-down
+                    .section__desc.desc(role="contentinfo")
                         each item in dayTh
                             +days(item)
-                .body__item
-                    .body__day.Heading Friday
-                        .arrow-down
-                    .body__desc.desc
+                article(role="main").section__item
+                    h2(role="presentation" aria-label="Friday").section__day.Heading Friday
+                        i.arrow-down
+                    .section__desc.desc(role="contentinfo")
                         each item in dayF
                             +days(item)
-                .body__item
-                    .body__day.Heading Saturday
-                        .arrow-down
-                    .body__desc.desc
+                article(role="main").section__item
+                    h2(role="presentation" aria-label="Saturday").section__day.Heading Saturday
+                        i.arrow-down
+                    .section__desc.desc(role="contentinfo")
                         each item in dayS
                             +days(item)
-                .body__item
-                    .body__day.Heading Sunday
-                        .arrow-down
-                    .body__desc.desc
+                article(role="main").section__item
+                    h2(role="presentation" aria-label="Sunday").section__day.Heading Sunday
+                        i.arrow-down
+                    .section__desc.desc(role="contentinfo")
                         each item in daySu
                             +days(item)
-                footer.section__footer.footer
-                    button(type="button").footer__btn-download.Medium-button-secondary Download a schedule
-                    button(type="button").footer__btn-book.Medium-button-primary Book a class
+        footer(role="group").main__footer.footer
+            a(href="#" role="link" aria-label="Download a schedule" download).footer__btn-download.Medium-button-secondary Download a schedule
+            a(href="#" role="link" aria-label="Book a class").footer__btn-book.Medium-button-primary Book a class
 
 
 
