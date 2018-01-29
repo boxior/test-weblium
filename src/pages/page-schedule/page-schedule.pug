@@ -6,12 +6,16 @@ block content
         var dayM = [
         {
         time: "6:30 pm - 7:30 pm",
+        time1: "6:30",
+        time2: "7:30",
         classG: "Workshop",
         coach: "Lucille Wright",
         level: "Beginners"
         },
         {
         time: "7:45 pm - 8:45 pm",
+        time1: "7:45",
+        time2: "8:45",
         classG: "Seminar",
         coach: "Lucille Wright",
         level: "Experienced"
@@ -20,18 +24,24 @@ block content
         var dayT = [
         {
         time: "6:30 pm - 7:30 pm",
+        time1: "6:30",
+        time2: "7:30",
         classG: "Workshop",
         coach: "Keith Conner",
         level: "Beginners"
         },
         {
         time: "7:45 pm - 8:45 pm",
+        time1: "7:45",
+        time2: "8:45",
         classG: "Q&A",
         coach: "Ada Elliott",
         level: "All levels"
         },
         {
         time: "9:00 pm - 10:00 pm",
+        time1: "9:00",
+        time2: "10:00",
         classG: "Q&A",
         coach: "Vernon Carlson",
         level: "Experienced"
@@ -40,6 +50,8 @@ block content
         var dayW = [
         {
         time: "6:30 pm - 7:30 pm",
+        time1: "6:30",
+        time2: "7:30",
         classG: "Workshop",
         coach: "Lucille Wright",
         level: "Experienced"
@@ -48,12 +60,16 @@ block content
         var dayTh = [
         {
         time: "6:30 pm - 7:30 pm",
+        time1: "6:30",
+        time2: "7:30",
         classG: "Workshop",
         coach: "Lucille Wright",
         level: "Beginners"
         },
         {
         time: "7:45 pm - 8:45 pm",
+        time1: "7:45",
+        time2: "8:45",
         classG: "Seminar",
         coach: "Lucille Wright",
         level: "Experienced"
@@ -62,18 +78,24 @@ block content
         var dayF = [
         {
         time: "6:30 pm - 7:30 pm",
+        time1: "6:30",
+        time2: "7:30",
         classG: "Workshop",
         coach: "Keith Conner",
         level: "Beginners"
         },
         {
         time: "7:45 pm - 8:45 pm",
+        time1: "7:45",
+        time2: "8:45",
         classG: "Q&A",
         coach: "Ada Elliott",
         level: "All levels"
         },
         {
         time: "9:00 pm - 10:00 pm",
+        time1: "9:00",
+        time2: "10:00",
         classG: "Q&A",
         coach: "Vernon Carlson",
         level: "Experienced"
@@ -82,18 +104,24 @@ block content
         var dayS = [
         {
         time: "6:30 pm - 7:30 pm",
+        time1: "6:30",
+        time2: "7:30",
         classG: "Workshop",
         coach: "Keith Conner",
         level: "Beginners"
         },
         {
         time: "7:45 pm - 8:45 pm",
+        time1: "7:45",
+        time2: "8:45",
         classG: "Q&A",
         coach: "Ada Elliott",
         level: "All levels"
         },
         {
         time: "9:00 pm - 10:00 pm",
+        time1: "9:00",
+        time2: "10:00",
         classG: "Q&A",
         coach: "Vernon Carlson",
         level: "Experienced"
@@ -102,29 +130,31 @@ block content
         var daySu = [
         {
         time: "6:30 pm - 7:30 pm",
+        time1: "6:30",
+        time2: "7:30",
         classG: "Seminar",
         coach: "Keith Conner",
         level: "All levels"
         }
         ];
 
-    menu(type="list").navigation.container
+    menu(type="toolbar" role="menu").navigation.container
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-0-all" role="tab" aria-label="State of page 1").navigation__btn.active-state State 1
+            button(type="button" data-class="state-0-all" aria-label="State of page 1").navigation__btn.active-state State 1
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-0-all-link" role="tab" aria-label="State of page 2").navigation__btn State 2
+            button(type="button" data-class="state-0-all-link" aria-label="State of page 2").navigation__btn State 2
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-1-three" role="tab" aria-label="State of page 3").navigation__btn State 3
+            button(type="button" data-class="state-1-three" aria-label="State of page 3").navigation__btn State 3
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-2" role="tab" aria-label="State of page 4").navigation__btn State 4
+            button(type="button" data-class="state-2" aria-label="State of page 4").navigation__btn State 4
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-3-without-subt" role="tab" aria-label="State of page 5").navigation__btn State 5
+            button(type="button" data-class="state-3-without-subt" aria-label="State of page 5").navigation__btn State 5
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-4-one-btn" role="tab" aria-label="State of page 6").navigation__btn State 6
+            button(type="button" data-class="state-4-one-btn" aria-label="State of page 6").navigation__btn State 6
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-5-without-btn" role="tab" aria-label="State of page 7").navigation__btn State 7
+            button(type="button" data-class="state-5-without-btn" aria-label="State of page 7").navigation__btn State 7
         li(role="menuitem").navigation__item
-            button(type="button" data-class="state-6-without-btn-subt" role="tab" aria-label="State of page 8").navigation__btn State 8
+            button(type="button" data-class="state-6-without-btn-subt" aria-label="State of page 8").navigation__btn State 8
 
     .page-schedule.schedule.container.state-0-all
         header(role="presentation").schedule__header.header
@@ -138,7 +168,7 @@ block content
                     li(role="presentation" aria-label="Class of educational program").heading__item.Heading-large Class
                     li(role="presentation" aria-label="Coach of educational program").heading__item.Heading-large.coach Coach
                     li(role="presentation" aria-label="Level of educational program").heading__item.Heading-large.level Level
-            section(role="main").main__section.section
+            article(role="main").main__section.section
                 article(role="main").section__item
                     h2(role="presentation" aria-label="Monday").section__day.Heading Monday
                         i.arrow-down
@@ -182,8 +212,8 @@ block content
                         each item in daySu
                             +days(item)
         footer(role="group").main__footer.footer
-            a(href="#" role="link" aria-label="Download a schedule" download).footer__btn-download.Medium-button-secondary Download a schedule
-            a(href="#" role="link" aria-label="Book a class").footer__btn-book.Medium-button-primary Book a class
+            a(href="#" aria-label="Download a schedule" download).footer__btn-download.Medium-button-secondary Download a schedule
+            a(href="#" aria-label="Book a class").footer__btn-book.Medium-button-primary Book a class
 
 
 

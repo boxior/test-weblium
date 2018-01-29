@@ -1,6 +1,10 @@
 mixin days(data)
     .desc__item
-        time(aria-label="Time of the program").desc__times=data.time
+        span(aria-label="Time of the program").desc__times
+            time.desc__time=data.time1
+            | &nbsp;pm -
+            time.desc__time=data.time2
+            | &nbsp;pm
         span(aria-label="Class of the program").desc__class=data.classG
         span(aria-label="Coach of the program").desc__coach.coach=data.coach
         span(aria-label="Level of the program").desc__level.level=data.level
